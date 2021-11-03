@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="curriculo.css">
+    <title>Meu Currículo - Aula Univesp</title>
+</head>
+<body onload="mostrar('', 'ok')">
+    
+    
+
+    <h1>Currículo</h1>
+    
+        <table class="tipo">
+            <tr>
+                <td><button id="completo" class="click" onclick="mostrar('ok')">Completo</button></td>
+                <td><button id="resumido" class="click" onclick="mostrar('', 'ok')">Resumido</button></td>
+            </tr>
+        </table>
+
+    <img id="card" src="card.jpg" alt="Cartão de identificação">
+
+    <h2>Dados Pessoais</h2>
+
+        <table class="paragrafo">
+            <tr id="nome">
+                <td>Meu Nome Completo</td>
+            </tr>
+            <tr id="email">
+                <td>meuemail@dominio.com</td>
+            </tr>
+            <tr id="site">
+                <td><a href="#">https://meusite.com/</a></td>
+            </tr>
+            <tr id="endereco">
+                <td>Cidade, Estado</td>
+            </tr>
+        </table>
+
+    <h2>Dados Profissionais</h2>
+
+        <table class="paragrafo">
+            <tr>
+                <td class="cel1 line">Organização:</td>
+                <td class="line">Google</td>
+            </tr>
+            <tr>
+                <td class="cel1 line">Organização:</td>
+                <td class="line">Microsoft</td>
+            </tr>
+            <tr>
+                <td class="cel1 line">Organização:</td>
+                <td class="line">Amazon</td>
+            </tr>
+            <tr>
+                <td class="cel1 line">Organização:</td>
+                <td class="line">Oracle</td>
+            </tr>
+        </table>
+
+    <h2 id="hformacao">Formação Acadêmica</h2>
+
+        <table id="formacao" class="paragrafo">
+            <tr>
+                <td class="cel1 line">Doutorado:</td>
+                <td class="line">Doutorado em Tecnologia da Informação</td>
+            </tr>
+            <tr>
+                <td class="cel1 line">Mestrado:</td>
+                <td class="line">Mestrado em Tecnologia da Informação</td>
+            </tr>
+            <tr>
+                <td class="cel1 line">Graduação:</td>
+                <td class="line">Bacharelado em Tecnologia da Informação</td>
+            </tr>
+        </table>
+
+    <h2 id="hcomplementar">Formação Complementar</h2>
+
+        <table id="complementar" class="paragrafo formacao">
+            <thead class="htable">
+                <tr>
+                    <td class="col1">Curso</td>
+                    <td class="col1">Carga Horária</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="impar">
+                    <td class="col1">Rede de Computadores</td>
+                    <td class="col1">80 hs</td>
+                </tr>
+                <tr class="par">
+                    <td class="col1">Desenvolvimento Web</td>
+                    <td class="col1">80 hs</td>
+                </tr>
+                <tr class="impar">
+                    <td class="col1">Machine Learn</td>
+                    <td class="col1">80 hs</td>
+                </tr>
+                <tr class="par">
+                    <td class="col1">Banco de Dados</td>
+                    <td class="col1">80 hs</td>
+                </tr>
+            </tbody>
+        </table>
+
+    <h2 id="hidiomas">Idiomas</h2>
+
+        <table id="idiomas" class="paragrafo idioma">
+            <thead class="htable">
+                <tr>
+                    <td class="col2">Idioma</td>
+                    <td class="col2">Escrita</td>
+                    <td class="col2">Leitura</td>
+                    <td class="col2">Fala</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="impar">
+                    <td class="col2">Inglês</td>
+                    <td class="limp col2">Intermediário</td>
+                    <td class="limp col2">Intermediário</td>
+                    <td class="limp col2">Básico</td>
+                </tr>
+                <tr class="par">
+                    <td class="col2">Espanhol</td>
+                    <td class="lp col2">Básico</td>
+                    <td class="lp col2">Basico</td>
+                    <td class="lp col2">Básico</td>
+                </tr>
+            </tbody>
+        </table>
+    
+    
+    <br />
+    <hr class="paragrafo">
+
+    <div id="formulario" class="paragrafo msg">
+        <p>Deixe sua mensagem:</p><br />
+        <form>
+            <label for="nome">Nome:</label><br />
+            <input type="text" name="nome" size="100"><br /><br />
+            <label for="mensagem">Mensagem:</label><br />
+            <textarea name="mensagem" id="mensagem" cols="100" rows="10"></textarea><br />
+            <input class="bt" type="submit" value="Enviar">
+
+        </form>
+    </div>
+
+
+    <script type="text/javascript" src="curriculo.js"></script>
+</body>
+</html>
